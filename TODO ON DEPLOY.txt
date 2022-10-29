@@ -1,0 +1,4 @@
+Don't forget that on deployment the post_max_size setting should be set to 0 to indicate no limits on ajax posts.
+This is necessary for previewing images.
+
+Also make sure you set the max_file_upload setting to 0 as well.

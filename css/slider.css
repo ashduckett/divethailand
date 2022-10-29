@@ -1,0 +1,170 @@
+.slickSliderContainer {
+    width: 100%;
+    font-size: 0;
+    margin: auto;
+}
+
+.slick-dots {
+    left: 100%;
+    height: 100%;
+    top: 0%;
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slick-dots li {
+    display: block;
+}
+
+.slick-slide img {
+    margin:auto;
+    /* width: 100%; */
+    /* height: 100%; */
+}
+
+.dotsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0.1;
+    z-index: 1;
+}
+
+.whitespace {
+    width: 10%;
+}
+
+
+
+/* Dots */
+
+.dotstyle ul {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    cursor: default;
+}
+
+.dotstyle li {
+    position: relative;
+    display: block;
+    /* float: left; */
+    margin: 16px 0;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.dotstyle li a {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 50%;
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.3);
+    text-indent: -999em;
+    cursor: pointer; /* make the text accessible to screen readers */
+    position: absolute;
+}
+
+
+/* Fill-up specific */
+
+/* Fill up */
+.dotstyle-fillup li a {
+overflow: hidden;
+background-color: rgba(0,0,0,0);
+box-shadow: inset 0 0 0 2px rgba(0,0,0,1);
+transition: background 0.3s;
+}
+
+.dotstyle-fillup li a::after {
+content: '';
+position: absolute;
+bottom: 0;
+height: 0;
+left: 0;
+width: 100%;
+background-color: black;
+box-shadow: 0 0 1px black;
+transition: height 0.3s;
+}
+
+.dotstyle-fillup.backgroundWhite li a::after {
+    background-color: white;
+}
+
+.dotstyle-fillup.backgroundBlack li a::after {
+    background-color: black;
+}
+
+
+.dotstyle-fillup li a:hover,
+.dotstyle-fillup li a:focus {
+background-color: rgba(0,0,0,0.2);
+}
+
+.dotstyle-fillup li.currentDot a::after {
+height: 90%;
+}
+
+.slick-track {
+/* display: flex;
+align-items: center; */
+
+}
+
+.previewImage {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.previewImage img {
+width: 100%;
+}
+
+
+.customSlider {
+display: flex; 
+width: 80%;
+margin: auto;
+overflow: hidden;
+}
+
+.customSlider .imagePreviews{
+    display: flex; 
+    overflow: hidden;
+    margin-left: 0;
+    margin-right: 0;
+
+    flex-direction: row;
+    /* This can be done in one line you fool */
+    margin-top: 3.33%;
+    margin-bottom: 3.33%;
+    text-align: center;
+    justify-content: space-between;
+    /* height: 20em; */
+    flex: 0.9;
+
+}
+
+.mainContent {
+    overflow: hidden;
+    flex: 0.9;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.customSlider {
+width: 100%;
+}

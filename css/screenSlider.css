@@ -1,0 +1,7 @@
+.dotsContainer {
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  left: 100%;
+  top: 50vh;
+  transform: translateX(-100%) translateY(-50%); }

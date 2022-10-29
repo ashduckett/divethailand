@@ -1,0 +1,40 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    margin: auto;
+}
+
+.errorList {
+    list-style: none;
+    list-style-type: none;
+}
+
+#loginForm {
+    #submitButton, a {
+        width: 100%;
+        margin: 0 !important;
+    }
+
+    img {
+        margin-bottom: 20px;
+    }
+
+    a {
+        color: unset;
+    }
+}
+
+#loginForm .error {
+    font-size: 15px;
+    width: unset;
+    color: red;
+}
+
